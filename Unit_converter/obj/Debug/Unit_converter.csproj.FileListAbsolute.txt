@@ -1,0 +1,10 @@
+C:\Users\Shashwat\source\repos\Unit_converter\Unit_converter\obj\Debug\Unit_converter.csproj.AssemblyReference.cache
+C:\Users\Shashwat\source\repos\Unit_converter\Unit_converter\obj\Debug\Unit_converter.Form1.resources
+C:\Users\Shashwat\source\repos\Unit_converter\Unit_converter\obj\Debug\Unit_converter.Properties.Resources.resources
+C:\Users\Shashwat\source\repos\Unit_converter\Unit_converter\obj\Debug\Unit_converter.csproj.GenerateResource.cache
+C:\Users\Shashwat\source\repos\Unit_converter\Unit_converter\obj\Debug\Unit_converter.csproj.CoreCompileInputs.cache
+C:\Users\Shashwat\source\repos\Unit_converter\Unit_converter\bin\Debug\Unit_converter.exe.config
+C:\Users\Shashwat\source\repos\Unit_converter\Unit_converter\bin\Debug\Unit_converter.exe
+C:\Users\Shashwat\source\repos\Unit_converter\Unit_converter\bin\Debug\Unit_converter.pdb
+C:\Users\Shashwat\source\repos\Unit_converter\Unit_converter\obj\Debug\Unit_converter.exe
+C:\Users\Shashwat\source\repos\Unit_converter\Unit_converter\obj\Debug\Unit_converter.pdb

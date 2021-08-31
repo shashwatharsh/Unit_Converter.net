@@ -1,0 +1,4 @@
+C:\Users\Shashwat\source\repos\Unit_converter\Unit_converter\obj\Release\Unit_converter.Form1.resources
+C:\Users\Shashwat\source\repos\Unit_converter\Unit_converter\obj\Release\Unit_converter.Properties.Resources.resources
+C:\Users\Shashwat\source\repos\Unit_converter\Unit_converter\obj\Release\Unit_converter.csproj.GenerateResource.cache
+C:\Users\Shashwat\source\repos\Unit_converter\Unit_converter\obj\Release\Unit_converter.csproj.CoreCompileInputs.cache
