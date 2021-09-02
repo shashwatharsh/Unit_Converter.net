@@ -36,6 +36,18 @@ namespace Unit_converter
             } if (listBox1.SelectedItem == "Meter" &&listBox2.SelectedItem =="Centimeter")
             {
                 rtb2.Text = (double.Parse(rtb1.Text)*100).ToString();
+            } if (listBox1.SelectedItem == "Meter" &&listBox2.SelectedItem =="Mile")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text)/1609).ToString();
+            }if (listBox1.SelectedItem == "Meter" &&listBox2.SelectedItem =="Yard")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text)*1.094).ToString();
+            }if (listBox1.SelectedItem == "Meter" &&listBox2.SelectedItem =="Inch")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text)*39.37).ToString();
+            }if (listBox1.SelectedItem == "Meter" &&listBox2.SelectedItem =="Foot")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text)*3.281).ToString();
             } if (listBox1.SelectedItem == "Kilometer" &&listBox2.SelectedItem =="Meter")
             {
                 rtb2.Text = (double.Parse(rtb1.Text)*1000).ToString();
@@ -43,6 +55,11 @@ namespace Unit_converter
 
            // double value2 = double.Parse(rtb1.Text);
            // rtb2.Text = (value2 * 100).ToString();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            m.Text = listBox1.SelectedItem.ToString();
         }
     }
 }

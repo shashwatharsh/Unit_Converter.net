@@ -32,7 +32,7 @@ namespace Unit_converter
             this.label1 = new System.Windows.Forms.Label();
             this.rtb1 = new System.Windows.Forms.TextBox();
             this.rtb2 = new System.Windows.Forms.TextBox();
-            this.M = new System.Windows.Forms.Label();
+            this.m = new System.Windows.Forms.Label();
             this.cm = new System.Windows.Forms.Label();
             this.clength = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -70,15 +70,15 @@ namespace Unit_converter
             this.rtb2.Size = new System.Drawing.Size(216, 29);
             this.rtb2.TabIndex = 2;
             // 
-            // M
+            // m
             // 
-            this.M.AutoSize = true;
-            this.M.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.M.Location = new System.Drawing.Point(300, 108);
-            this.M.Name = "M";
-            this.M.Size = new System.Drawing.Size(26, 24);
-            this.M.TabIndex = 3;
-            this.M.Text = "M";
+            this.m.AutoSize = true;
+            this.m.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m.Location = new System.Drawing.Point(300, 108);
+            this.m.Name = "m";
+            this.m.Size = new System.Drawing.Size(26, 24);
+            this.m.TabIndex = 3;
+            this.m.Text = "M";
             // 
             // cm
             // 
@@ -110,17 +110,15 @@ namespace Unit_converter
             "Meter",
             "Kilometer",
             "Centimeter",
-            "Micrometer",
-            "Nanometer",
             "Mile",
             "Yard",
             "Foot",
-            "Inch",
-            "Lightyear"});
+            "Inch"});
             this.listBox1.Location = new System.Drawing.Point(78, 177);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(216, 130);
             this.listBox1.TabIndex = 6;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox2
             // 
@@ -131,13 +129,10 @@ namespace Unit_converter
             "Meter",
             "Kilometer",
             "Centimeter",
-            "Micrometer",
-            "Nanometer",
             "Mile",
             "Yard",
             "Foot",
-            "Inch",
-            "Lightyear"});
+            "Inch"});
             this.listBox2.Location = new System.Drawing.Point(535, 177);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(216, 130);
@@ -174,7 +169,7 @@ namespace Unit_converter
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.clength);
             this.Controls.Add(this.cm);
-            this.Controls.Add(this.M);
+            this.Controls.Add(this.m);
             this.Controls.Add(this.rtb2);
             this.Controls.Add(this.rtb1);
             this.Controls.Add(this.label1);
@@ -190,13 +185,13 @@ namespace Unit_converter
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox rtb1;
         private System.Windows.Forms.TextBox rtb2;
-        private System.Windows.Forms.Label M;
         private System.Windows.Forms.Label cm;
         private System.Windows.Forms.Button clength;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label m;
     }
 }
 
