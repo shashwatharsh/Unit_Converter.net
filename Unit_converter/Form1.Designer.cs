@@ -137,6 +137,7 @@ namespace Unit_converter
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(216, 130);
             this.listBox2.TabIndex = 7;
+            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
             // label2
             // 

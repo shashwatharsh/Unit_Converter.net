@@ -30,36 +30,126 @@ namespace Unit_converter
             {
                 rtb2.Text = double.Parse(rtb1.Text).ToString();
             }
-            if (listBox1.SelectedItem == "Meter" &&listBox2.SelectedItem =="Kilometer")
+            if (listBox1.SelectedItem.ToString() == "Meter" &&listBox2.SelectedItem.ToString() == "Kilometer")
             {
                 rtb2.Text = (double.Parse(rtb1.Text)*0.001).ToString();
-            } if (listBox1.SelectedItem == "Meter" &&listBox2.SelectedItem =="Centimeter")
+            } if (listBox1.SelectedItem.ToString() == "Meter" &&listBox2.SelectedItem.ToString() == "Centimeter")
             {
                 rtb2.Text = (double.Parse(rtb1.Text)*100).ToString();
-            } if (listBox1.SelectedItem == "Meter" &&listBox2.SelectedItem =="Mile")
+            } if (listBox1.SelectedItem.ToString() == "Meter" &&listBox2.SelectedItem.ToString() == "Mile")
             {
                 rtb2.Text = (double.Parse(rtb1.Text)/1609).ToString();
-            }if (listBox1.SelectedItem == "Meter" &&listBox2.SelectedItem =="Yard")
+            }if (listBox1.SelectedItem.ToString() == "Meter" &&listBox2.SelectedItem.ToString() == "Yard")
             {
                 rtb2.Text = (double.Parse(rtb1.Text)*1.094).ToString();
-            }if (listBox1.SelectedItem == "Meter" &&listBox2.SelectedItem =="Inch")
+            }if (listBox1.SelectedItem.ToString() == "Meter" &&listBox2.SelectedItem.ToString() == "Inch")
             {
                 rtb2.Text = (double.Parse(rtb1.Text)*39.37).ToString();
-            }if (listBox1.SelectedItem == "Meter" &&listBox2.SelectedItem =="Foot")
+            }if (listBox1.SelectedItem.ToString() == "Meter" &&listBox2.SelectedItem.ToString() == "Foot")
             {
                 rtb2.Text = (double.Parse(rtb1.Text)*3.281).ToString();
-            } if (listBox1.SelectedItem == "Kilometer" &&listBox2.SelectedItem =="Meter")
+            } if (listBox1.SelectedItem.ToString() == "Kilometer" &&listBox2.SelectedItem.ToString() == "Meter")
             {
                 rtb2.Text = (double.Parse(rtb1.Text)*1000).ToString();
             }
-
-           // double value2 = double.Parse(rtb1.Text);
-           // rtb2.Text = (value2 * 100).ToString();
+            if (listBox1.SelectedItem.ToString() == "Kilometer" && listBox2.SelectedItem.ToString() == "Centimeter")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) * 100000).ToString();
+            }
+            if (listBox1.SelectedItem.ToString() == "Kilometer" && listBox2.SelectedItem.ToString() == "Mile")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) / 1.609).ToString();
+            }
+            if (listBox1.SelectedItem.ToString() == "Kilometer" && listBox2.SelectedItem.ToString() == "Yard")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) * 1094 ).ToString();
+            }
+            if (listBox1.SelectedItem.ToString() == "Kilometer" && listBox2.SelectedItem.ToString() == "Inch")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) * 39370).ToString();
+            }
+            if (listBox1.SelectedItem.ToString() == "Kilometer" && listBox2.SelectedItem.ToString() == "Foot")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) * 3281).ToString();
+            }
+            if (listBox1.SelectedItem.ToString() == "Centimeter" && listBox2.SelectedItem.ToString() == "Meter")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) * 0.01).ToString();
+            }
+            if (listBox1.SelectedItem.ToString() == "Centimeter" && listBox2.SelectedItem.ToString() == "Kilometer")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) / 100000 ).ToString();
+            } if (listBox1.SelectedItem.ToString() == "Centimeter" && listBox2.SelectedItem.ToString() == "Mile")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) / 160934).ToString();
+            }
+            if (listBox1.SelectedItem == "Centimeter" && listBox2.SelectedItem == "Yard")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) / 91.44 ).ToString();
+            }if (listBox1.SelectedItem == "Centimeter" && listBox2.SelectedItem == "Foot")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) / 30.48  ).ToString();
+            }if (listBox1.SelectedItem.ToString() == "Centimeter" && listBox2.SelectedItem.ToString() == "Inch")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) / 2.54).ToString();
+            }if (listBox1.SelectedItem.ToString() == "Mile" && listBox2.SelectedItem.ToString() == "Meter")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) * 1609).ToString();
+            }if (listBox1.SelectedItem.ToString() == "Mile" && listBox2.SelectedItem.ToString() == "Kilometer")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) * 1.609).ToString();
+            }if (listBox1.SelectedItem == "Mile" && listBox2.SelectedItem == "Centimeter")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) * 160934).ToString();
+            }if (listBox1.SelectedItem == "Mile" && listBox2.SelectedItem == "Inch")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) * 63360).ToString();
+            }if (listBox1.SelectedItem == "Mile" && listBox2.SelectedItem.ToString() == "Yard")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) * 1760).ToString();
+            }if (listBox1.SelectedItem.ToString() == "Mile" && listBox2.SelectedItem.ToString() == "Feet")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) * 5280).ToString();
+            }if (listBox1.SelectedItem.ToString() == "Yard" && listBox2.SelectedItem.ToString() == "Meter")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) / 1.094).ToString();
+            }if (listBox1.SelectedItem.ToString() == "Yard" && listBox2.SelectedItem.ToString() == "Kilometer")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) / 1094).ToString();
+            }if (listBox1.SelectedItem.ToString() == "Yard" && listBox2.SelectedItem.ToString() == "Centimeter")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) * 91.44).ToString();
+            }if (listBox1.SelectedItem.ToString() == "Yard" && listBox2.SelectedItem.ToString() == "Mile")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) / 1760).ToString();
+            }if (listBox1.SelectedItem.ToString() == "Yard" && listBox2.SelectedItem.ToString() == "Foot")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) * 3).ToString();
+            }if (listBox1.SelectedItem.ToString() == "Yard" && listBox2.SelectedItem.ToString() == "Inch")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) * 36).ToString();
+            }if (listBox1.SelectedItem.ToString() == "Foot" && listBox2.SelectedItem.ToString() == "Meter")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) / 3.281).ToString();
+            }if (listBox1.SelectedItem.ToString() == "Foot" && listBox2.SelectedItem.ToString() == "Kilometer")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) / 3281).ToString();
+            }if (listBox1.SelectedItem.ToString() == "Foot" && listBox2.SelectedItem.ToString() == "Centimeter")
+            {
+                rtb2.Text = (double.Parse(rtb1.Text) * 30.48).ToString();
+            }
+            // double value2 = double.Parse(rtb1.Text);
+            // rtb2.Text = (value2 * 100).ToString();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             m.Text = listBox1.SelectedItem.ToString();
+        }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cm.Text = listBox2.SelectedItem.ToString();
         }
     }
 }
