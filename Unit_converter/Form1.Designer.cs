@@ -39,13 +39,17 @@ namespace Unit_converter
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.lengthConverterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tempratureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Emoji", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(255, 9);
+            this.label1.Location = new System.Drawing.Point(254, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(299, 47);
             this.label1.TabIndex = 0;
@@ -159,6 +163,30 @@ namespace Unit_converter
             this.label3.TabIndex = 9;
             this.label3.Text = "To:";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lengthConverterToolStripMenuItem,
+            this.tempratureToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(897, 24);
+            this.menuStrip1.TabIndex = 10;
+            this.menuStrip1.Text = "menu Script";
+            // 
+            // lengthConverterToolStripMenuItem
+            // 
+            this.lengthConverterToolStripMenuItem.Name = "lengthConverterToolStripMenuItem";
+            this.lengthConverterToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.lengthConverterToolStripMenuItem.Text = "Length ";
+            this.lengthConverterToolStripMenuItem.Click += new System.EventHandler(this.lengthConverterToolStripMenuItem_Click);
+            // 
+            // tempratureToolStripMenuItem
+            // 
+            this.tempratureToolStripMenuItem.Name = "tempratureToolStripMenuItem";
+            this.tempratureToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.tempratureToolStripMenuItem.Text = "Temprature";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,8 +202,12 @@ namespace Unit_converter
             this.Controls.Add(this.rtb2);
             this.Controls.Add(this.rtb1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,6 +225,9 @@ namespace Unit_converter
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label m;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem lengthConverterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tempratureToolStripMenuItem;
     }
 }
 

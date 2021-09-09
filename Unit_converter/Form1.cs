@@ -83,10 +83,10 @@ namespace Unit_converter
             {
                 rtb2.Text = (double.Parse(rtb1.Text) / 160934).ToString();
             }
-            if (listBox1.SelectedItem == "Centimeter" && listBox2.SelectedItem == "Yard")
+            if (listBox1.SelectedItem.ToString() == "Centimeter" && listBox2.SelectedItem.ToString() == "Yard")
             {
                 rtb2.Text = (double.Parse(rtb1.Text) / 91.44 ).ToString();
-            }if (listBox1.SelectedItem == "Centimeter" && listBox2.SelectedItem == "Foot")
+            }if (listBox1.SelectedItem.ToString() == "Centimeter" && listBox2.SelectedItem.ToString() == "Foot")
             {
                 rtb2.Text = (double.Parse(rtb1.Text) / 30.48  ).ToString();
             }if (listBox1.SelectedItem.ToString() == "Centimeter" && listBox2.SelectedItem.ToString() == "Inch")
@@ -98,13 +98,13 @@ namespace Unit_converter
             }if (listBox1.SelectedItem.ToString() == "Mile" && listBox2.SelectedItem.ToString() == "Kilometer")
             {
                 rtb2.Text = (double.Parse(rtb1.Text) * 1.609).ToString();
-            }if (listBox1.SelectedItem == "Mile" && listBox2.SelectedItem == "Centimeter")
+            }if (listBox1.SelectedItem.ToString() == "Mile" && listBox2.SelectedItem.ToString() == "Centimeter")
             {
                 rtb2.Text = (double.Parse(rtb1.Text) * 160934).ToString();
-            }if (listBox1.SelectedItem == "Mile" && listBox2.SelectedItem == "Inch")
+            }if (listBox1.SelectedItem.ToString() == "Mile" && listBox2.SelectedItem.ToString() == "Inch")
             {
                 rtb2.Text = (double.Parse(rtb1.Text) * 63360).ToString();
-            }if (listBox1.SelectedItem == "Mile" && listBox2.SelectedItem.ToString() == "Yard")
+            }if (listBox1.SelectedItem.ToString() == "Mile" && listBox2.SelectedItem.ToString() == "Yard")
             {
                 rtb2.Text = (double.Parse(rtb1.Text) * 1760).ToString();
             }if (listBox1.SelectedItem.ToString() == "Mile" && listBox2.SelectedItem.ToString() == "Feet")
@@ -150,6 +150,11 @@ namespace Unit_converter
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             cm.Text = listBox2.SelectedItem.ToString();
+        }
+
+        private void lengthConverterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
